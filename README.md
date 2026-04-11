@@ -27,6 +27,12 @@ pip install poetry
 poetry install
 ```
 
+Run modules from the repository root:
+
+```powershell
+poetry run python -m s3.upload_files_by_extension.main -h
+```
+
 Create a local `.env` file based on `.env.example`:
 
 ```env
