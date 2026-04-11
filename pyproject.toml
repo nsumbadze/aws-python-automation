@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "aws-python-automation"
+version = "0.1.0"
+description = "Reusable AWS automation scripts and CLI utilities built with Python."
+authors = ["Davit"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+boto3 = "^1.34.0"
+botocore = "^1.34.0"
+python-dotenv = "^1.0.1"
+python-magic = "^0.4.27"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
