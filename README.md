@@ -26,3 +26,12 @@ Install dependencies from the repository root:
 pip install poetry
 poetry install
 ```
+
+Create a local `.env` file based on `.env.example`:
+
+```env
+aws_access_key_id=YOUR_ACCESS_KEY_ID
+aws_secret_access_key=YOUR_SECRET_ACCESS_KEY
+aws_session_token=
+aws_region_name=us-east-1
+```
