@@ -27,6 +27,12 @@ pip install poetry
 poetry install
 ```
 
+On Windows, install `python-magic-bin` inside the Poetry environment:
+
+```powershell
+poetry run pip install python-magic-bin
+```
+
 Run modules from the repository root:
 
 ```powershell
@@ -41,3 +47,9 @@ aws_secret_access_key=YOUR_SECRET_ACCESS_KEY
 aws_session_token=
 aws_region_name=us-east-1
 ```
+
+## Current module
+
+`s3/upload_files_by_extension`
+
+This module creates S3 buckets and uploads local files into folders derived from file extensions.

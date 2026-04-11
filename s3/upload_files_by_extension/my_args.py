@@ -39,4 +39,24 @@ def build_parser():
         default=getenv("aws_region_name", "us-east-1"),
     )
 
+    upload_parser = subparsers.add_parser(
+        "upload",
+        help="Upload one local file into an extension-based folder in S3.",
+    )
+    upload_parser.add_argument("bucket_name", type=str, help="Target S3 bucket name.")
+    upload_parser.add_argument(
+        "--file",
+        required=True,
+        type=str,
+        help="Path to the local file that will be uploaded.",
+    )
+    upload_parser.add_argument(
+        "--object-name",
+        default=None,
+        type=str,
+        help="Optional custom object name to use in S3.",
+    )
+
+    subparsers.add_parser("list_buckets", help="List available S3 buckets.")
+
     return parser
