@@ -59,3 +59,7 @@ aws_region_name=us-east-1
 `s3/upload_files_by_extension`
 
 This module creates S3 buckets and uploads local files into folders derived from file extensions.
+
+`s3/prune_file_versions`
+
+This module checks object versions for selected S3 keys, deletes versions older than six months, and manages bucket versioning status.
