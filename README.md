@@ -67,3 +67,7 @@ This module checks object versions for selected S3 keys, deletes versions older 
 `s3/manage_file_versions`
 
 This module checks whether bucket versioning is enabled, shows file version counts and creation dates, and restores the previous version as the latest version.
+
+`s3/host_static_site`
+
+This module generates a simple `index.html` page and hosts static websites on S3, including directories produced by React builds.
