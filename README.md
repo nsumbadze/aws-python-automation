@@ -27,6 +27,12 @@ pip install poetry
 poetry install
 ```
 
+Or run the bootstrap script:
+
+```powershell
+python init.py
+```
+
 On Windows, install `python-magic-bin` inside the Poetry environment:
 
 ```powershell
