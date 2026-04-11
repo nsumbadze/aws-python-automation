@@ -20,17 +20,19 @@ aws-python-automation/
 
 ## Setup
 
-Install dependencies from the repository root:
+Quick start:
+
+```powershell
+python init.py
+```
+
+The `init.py` command creates `.env`, checks Poetry, installs dependencies, and applies platform-specific setup steps.
+
+Manual setup:
 
 ```powershell
 pip install poetry
 poetry install
-```
-
-Or run the bootstrap script:
-
-```powershell
-python init.py
 ```
 
 On Windows, install `python-magic-bin` inside the Poetry environment:
