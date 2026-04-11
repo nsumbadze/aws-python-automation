@@ -63,3 +63,7 @@ This module creates S3 buckets and uploads local files into folders derived from
 `s3/prune_file_versions`
 
 This module checks object versions for selected S3 keys, deletes versions older than six months, and manages bucket versioning status.
+
+`s3/manage_file_versions`
+
+This module checks whether bucket versioning is enabled, shows file version counts and creation dates, and restores the previous version as the latest version.
