@@ -77,3 +77,7 @@ This module generates a simple `index.html` page and hosts static websites on S3
 `s3/host_website_source`
 
 This module hosts a local website source folder on S3 in one command by creating the bucket if needed, configuring static website hosting, uploading the source, and returning the website URL.
+
+`quotes/inspire_quotes`
+
+This module fetches a random quote from the Quotable API, supports author filtering, and can save the returned quote to S3 as a JSON file.
