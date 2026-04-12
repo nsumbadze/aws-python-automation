@@ -73,3 +73,7 @@ This module checks whether bucket versioning is enabled, shows file version coun
 `s3/host_static_site`
 
 This module generates a simple `index.html` page and hosts static websites on S3, including directories produced by React builds.
+
+`s3/host_website_source`
+
+This module hosts a local website source folder on S3 in one command by creating the bucket if needed, configuring static website hosting, uploading the source, and returning the website URL.
