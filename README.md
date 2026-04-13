@@ -81,3 +81,7 @@ This module hosts a local website source folder on S3 in one command by creating
 `quotes/inspire_quotes`
 
 This module fetches a random quote from the Quotable API, supports author filtering, and can save the returned quote to S3 as a JSON file.
+
+`lambda/copy_to_extension_folder`
+
+This Lambda function listens for S3 object creation events and copies uploaded files into folders named after their file extensions.
